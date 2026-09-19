@@ -1,24 +1,67 @@
 <?xml version="1.0"?>
+
+<!--
+  ROS 2 package manifest.
+  This file tells ROS 2 what this package is and what it depends on.
+-->
 <package format="3">
 
+  <!-- Basic package information -->
   <name>turtle_controller</name>
   <version>0.0.1</version>
   <description>Keyboard controller for TurtleSim using protobuf</description>
 
+  <!-- Person responsible for maintaining this package -->
   <maintainer email="random_email_cus_idk_who_is_gonna_read_this@gmail.com">Joshuanaveen</maintainer>
+
+  <!-- License for the project -->
   <license>Apache-2.0</license>
 
+
+  <!-- ROS 2 build system used by this package -->
   <buildtool_depend>ament_cmake</buildtool_depend>
 
+
+  <!--
+    Runtime/build dependencies:
+
+    rclpy:
+      Python API for creating ROS 2 nodes.
+
+    geometry_msgs:
+      Provides standard ROS 2 geometry messages such as Twist,
+      which can be used to control TurtleSim movement.
+
+    proto2ros:
+      Converts our protobuf definitions into ROS 2-compatible
+      message interfaces and conversion code.
+  -->
   <depend>rclpy</depend>
   <depend>geometry_msgs</depend>
   <depend>proto2ros</depend>
 
+
+  <!--
+    Dependencies required to generate and use ROS 2 interfaces.
+
+    rosidl_default_generators:
+      Generates ROS 2 language-specific code from message definitions.
+
+    rosidl_default_runtime:
+      Provides the runtime support needed to use generated interfaces.
+  -->
   <buildtool_depend>rosidl_default_generators</buildtool_depend>
   <exec_depend>rosidl_default_runtime</exec_depend>
 
+
+  <!--
+    Tells ROS 2 that this package provides ROS 2 message interfaces.
+    Our generated MovementCommand message belongs to this interface package.
+  -->
   <member_of_group>rosidl_interface_packages</member_of_group>
 
+
+  <!-- Tell ROS 2 to use ament_cmake as the package build type -->
   <export>
     <build_type>ament_cmake</build_type>
   </export>
