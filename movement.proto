@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-package turtle_controller;
-
-message MovementCommand {
-    float linear = 1;
-    float angular = 2;
-}
