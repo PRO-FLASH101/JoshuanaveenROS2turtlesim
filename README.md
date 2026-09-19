@@ -16,4 +16,14 @@ Design:
 6. /turtle1/cmd_vel  
 7. TurtleSim moves
 
+
+Keyboard
+   ↓
+Python controller
+   ↓
+MovementCommand
+   ↓
+ROS 2
+   ↓
+TurtleSim
 ______________________________________________________________________________________________________________________________________________________
