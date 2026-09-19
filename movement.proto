@@ -2,6 +2,7 @@ syntax = "proto3";
 
 package turtle_controller;
 
+//Goes up by 1 and side to side by 2???
 message MovementCommand {
     float linear = 1;
     float angular = 2;
