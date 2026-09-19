@@ -8,24 +8,12 @@ Goal:
 ______________________________________________________________________________________________________________________________________________________
 Design: 
 
-Keyboard (W/A/S/D)
-      │
-      ▼
-Keyboard Node  ← tracks which keys are currently "active" (via watchdog timing)
-      │
-      ▼
-MovementCommand (protobuf-generated ROS2 message)
-      │
-      ▼
-Translator/bridge node  ← not yet made
-      │
-      ▼
-geometry_msgs/Twist    
-      │
-      ▼
-/turtle1/cmd_vel  
-      │
-      ▼
-TurtleSim moves
+1.  Keyboard (W/A/S/D)
+2. Keyboard Node  ← tracks which keys are currently "active" (via watchdog timing)
+3. MovementCommand (protobuf-generated ROS2 message)
+4. Translator/bridge node  ← not yet made
+5. geometry_msgs/Twist    
+6. /turtle1/cmd_vel  
+7. TurtleSim moves
 
 ______________________________________________________________________________________________________________________________________________________
