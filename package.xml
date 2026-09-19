@@ -2,7 +2,7 @@
 
 <!--
   ROS 2 package manifest.
-  This file tells ROS 2 what this package is and what it depends on.
+  Tells ROS 2 what this package is and what it depends on.
 -->
 <package format="3">
 
@@ -11,7 +11,7 @@
   <version>0.0.1</version>
   <description>Keyboard controller for TurtleSim using protobuf</description>
 
-  <!-- Person responsible for maintaining this package -->
+  <!-- My fake email which is responsible for maintaining this package -->
   <maintainer email="random_email_cus_idk_who_is_gonna_read_this@gmail.com">Joshuanaveen</maintainer>
 
   <!-- License for the project -->
@@ -33,7 +33,7 @@
       which can be used to control TurtleSim movement.
 
     proto2ros:
-      Converts our protobuf definitions into ROS 2-compatible
+      Converts the protobuf definitions into ROS 2-compatible
       message interfaces and conversion code.
   -->
   <depend>rclpy</depend>
@@ -56,7 +56,7 @@
 
   <!--
     Tells ROS 2 that this package provides ROS 2 message interfaces.
-    Our generated MovementCommand message belongs to this interface package.
+    The generated MovementCommand message belongs to this interface package.
   -->
   <member_of_group>rosidl_interface_packages</member_of_group>
 
