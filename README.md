@@ -17,13 +17,5 @@ Design:
 7. TurtleSim moves
 
 
-Keyboard
-   ↓
-Python controller
-   ↓
-MovementCommand
-   ↓
-ROS 2
-   ↓
-TurtleSim
+Keyboard --> Python controller --> MovementCommand --> ROS 2 --> TurtleSim
 ______________________________________________________________________________________________________________________________________________________
