@@ -20,6 +20,12 @@ MovementCommand (protobuf-generated ROS2 message)
 Translator/bridge node  ← not yet made
       │
       ▼
-geometry_msgs/Twist  →  /turtle1/cmd_vel  →  TurtleSim moves
+geometry_msgs/Twist    
+      │
+      ▼
+/turtle1/cmd_vel  
+      │
+      ▼
+TurtleSim moves
 
 ______________________________________________________________________________________________________________________________________________________
